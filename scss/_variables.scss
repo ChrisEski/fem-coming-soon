@@ -1,0 +1,24 @@
+// Layout
+$desktop: 900px;
+
+// Colors
+$clr--white: hsl(0, 0%, 100%);
+$clr--black: hsl(0, 0%, 0%);
+
+$clr--red-300: hsl(0, 36%, 70%);
+$clr--red-600: hsl(0, 93%, 68%);
+$clr--red-900: hsl(0, 6%, 24%);
+
+// 135 degrees linear-gradient
+$linear--bg-start: hsl(0, 0%, 100%);
+$linear--bg-end: hsl(0, 100%, 98%);
+
+$linear--btn-start: hsl(0, 80%, 86%);
+$linear--btn-end: hsl(0, 74%, 74%);
+
+// Typography
+$fs--main: 16px;
+$fw--light: 300;
+$fw--regular: 400;
+$fw--bold: 600;
+$ff--main: 'Josefin Sans', sans-serif;
