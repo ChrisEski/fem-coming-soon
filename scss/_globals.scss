@@ -10,10 +10,3 @@ html {
   font-family: $ff--main;
   font-size: $fs--main;
 }
-
-.container {
-  // border: 1px solid red;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(135deg, $linear--bg-start, $linear--bg-end);
-}

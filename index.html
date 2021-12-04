@@ -19,47 +19,39 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <div class="container px py">
-      <header class="header">
+    <div class="container">
+      <header class="logo">
         <img
           src="./images/logo.svg"
           alt="Base Apparel Logo"
-          class="header__logo"
+          class="logo__img"
         />
       </header>
-      <section class="hero" aria-hidden="true"></section>
+      <div class="hero-mobile"></div>
       <main class="main">
-        <h1 class="main__title"><span>We're</span> coming soon</h1>
-        <p class="main__text">
+        <h1 class="main__title">We're coming soon</h1>
+        <p class="main__subtitle">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form action="#" class="main__form form" novalidate>
-          <label for="email" style="display: none">Email Address</label>
-          <div class="input-wrapper">
-            <input
-              class="form__input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email Address"
-            />
+        <form action="#" class="form" novalidate>
+          <input type="text" class="form__input" placeholder="Email Address" />
+          <img
+            src="./images/icon-error.svg"
+            alt="error"
+            class="form__icon-error"
+            aria-hidden="true"
+          />
+          <button class="form__btn" type="submit">
             <img
-              class="form__error-icon"
+              src="./images/icon-arrow.svg"
+              alt="submit"
+              class="form__icon-arrow"
               aria-hidden="true"
-              src="./images/icon-error.svg"
-              alt="Error sign"
             />
-            <button type="submit" class="btn" aria-label="Submit Email">
-              <img
-                src="./images/icon-arrow.svg"
-                aria-hidden="true"
-                class="btn__img"
-              />
-            </button>
-          </div>
-          <p class="form__error-text">Please provide a valid email</p>
+          </button>
+          <p class="form__text-error">Please provide a valid email</p>
         </form>
       </main>
       <footer class="footer">
@@ -74,6 +66,8 @@
         </p>
       </footer>
     </div>
+    <div class="hero-desktop"></div>
+
     <script src="./dist/script.js"></script>
   </body>
 </html>
