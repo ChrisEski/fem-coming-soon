@@ -1,0 +1,57 @@
+.logo {
+  // border: 1px solid red;
+  background-color: $clr--white;
+  &__img {
+    // border: 1px solid lightgreen;
+    display: block;
+    width: 165px;
+    padding: 30px;
+  }
+}
+
+.hero-mobile {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  // border: 1px solid red;
+  padding: 65px 30px 0px;
+  // background: linear-gradient(135deg, $linear--bg-start, $linear--bg-end);
+
+  &__title {
+    text-align: center;
+    font-size: 43px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: $fw--light;
+      color: $clr--red-300;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    color: $clr--red-300;
+    margin-bottom: 35px;
+  }
+}
+
+.footer {
+  .attribution {
+    text-align: center;
+    font-size: 11px;
+    color: hsla(0, 6%, 24%, 0.5);
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: $fw--bold;
+    color: hsl(0, 6%, 24%);
+  }
+}

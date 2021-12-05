@@ -9,4 +9,10 @@
 html {
   font-family: $ff--main;
   font-size: $fs--main;
+  color: $clr--red-900;
+}
+
+.container {
+  background-color: $linear--bg-end;
+  min-height: 100vh;
 }
