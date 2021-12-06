@@ -19,77 +19,79 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <div class="container">
-      <!-- HEADER SECTION -->
-      <header class="logo">
+    <div class="wrapper">
+      <div class="container">
+        <!-- HEADER SECTION -->
+        <header class="logo">
+          <img
+            src="./images/logo.svg"
+            alt="Base Apparel Logo"
+            class="logo__img"
+          />
+        </header>
+
         <img
-          src="./images/logo.svg"
-          alt="Base Apparel Logo"
-          class="logo__img"
+          class="hero-mobile"
+          src="./images/hero-mobile.jpg"
+          aria-hidden="true"
+          data-hidden="false"
         />
-      </header>
 
-      <img
-        class="hero-mobile"
-        src="./images/hero-mobile.jpg"
-        aria-hidden="true"
-        data-hidden="false"
-      />
-
-      <!-- MAIN SECTION -->
-      <main class="main">
-        <h1 class="main__title"><span>We're</span> coming soon</h1>
-        <p class="main__subtitle">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
-        <form action="#" class="form" type="email" novalidate>
-          <div class="form__input-wrapper">
-            <input
-              type="text"
-              class="form__input"
-              placeholder="Email Address"
-              data-error="false"
-            />
-            <img
-              src="./images/icon-error.svg"
-              alt="error"
-              class="form__icon-error"
-              aria-hidden="true"
-              data-error="false"
-            />
-            <button class="form__btn" type="submit">
-              <img
-                src="./images/icon-arrow.svg"
-                alt="submit"
-                class="form__icon-arrow"
-                aria-hidden="true"
+        <!-- MAIN SECTION -->
+        <main class="main">
+          <h1 class="main__title"><span>We're</span> coming soon</h1>
+          <p class="main__subtitle">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form action="#" class="form" type="email" novalidate>
+            <div class="form__input-wrapper">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Email Address"
+                data-error="false"
               />
-            </button>
-          </div>
-          <p class="form__text-error" data-error="false">
-            Please provide a valid email
-          </p>
-        </form>
+              <img
+                src="./images/icon-error.svg"
+                alt="error"
+                class="form__icon-error"
+                aria-hidden="true"
+                data-error="false"
+              />
+              <button class="form__btn" type="submit">
+                <img
+                  src="./images/icon-arrow.svg"
+                  alt="submit"
+                  class="form__icon-arrow"
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+            <p class="form__text-error" data-error="false">
+              Please provide a valid email
+            </p>
+          </form>
 
-        <!-- FOOTER SECTION -->
-        <footer class="footer">
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by
-            <a href="https://github.com/ChrisEski/fem-coming-soon">ChrisEski</a
-            >.
-          </p>
-        </footer>
-      </main>
+          <!-- FOOTER SECTION -->
+          <footer class="footer">
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by
+              <a href="https://github.com/ChrisEski/fem-coming-soon"
+                >ChrisEski</a
+              >.
+            </p>
+          </footer>
+        </main>
+      </div>
+      <div class="hero-desktop" data-hidden="true"></div>
     </div>
-    <div class="hero-desktop" data-hidden="true"></div>
-
     <script src="./dist/script.js"></script>
   </body>
 </html>

@@ -13,19 +13,67 @@ html {
   color: #413a3a;
 }
 
-.container {
-  background-color: #fff5f5;
+.wrapper {
   min-height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    background: linear-gradient(135deg, white, #fff5f5);
+    background-image: url("./../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
+  }
 }
 
 .logo {
   background-color: white;
 }
 
+@media (min-width: 900px) {
+  .logo {
+    background-color: transparent;
+    margin-bottom: 70px;
+    padding-left: 160px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .logo {
+    padding-left: 220px;
+  }
+}
+
 .logo__img {
   display: block;
-  width: 165px;
+  width: 145px;
   padding: 30px;
+}
+
+@media (min-width: 900px) {
+  .logo__img {
+    width: 165px;
+    padding: 64px 0px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .logo__img {
+    width: 210px;
+  }
 }
 
 .hero-mobile {
@@ -33,8 +81,33 @@ html {
   width: 100%;
 }
 
+@media (min-width: 900px) {
+  .hero-mobile {
+    display: none;
+  }
+}
+
 .main {
   padding: 65px 30px 0px;
+}
+
+@media (min-width: 900px) {
+  .main {
+    padding: 0px 240px 0px 160px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .main {
+    padding-right: 360px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .main {
+    padding-left: 220px;
+    padding-right: 400px;
+  }
 }
 
 .main__title {
@@ -44,6 +117,24 @@ html {
   letter-spacing: 10px;
   line-height: 1.1;
   margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  .main__title {
+    text-align: left;
+    font-size: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 17px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .main__title {
+    font-size: 70px;
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+    line-height: 1.2;
+  }
 }
 
 .main__title span {
@@ -59,10 +150,40 @@ html {
   margin-bottom: 35px;
 }
 
+@media (min-width: 900px) {
+  .main__subtitle {
+    text-align: left;
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 1660px) {
+  .main__subtitle {
+    text-align: left;
+    line-height: 2;
+    font-size: 19px;
+    font-weight: 600;
+  }
+}
+
 .footer .attribution {
   text-align: center;
   font-size: 11px;
   color: rgba(65, 58, 58, 0.5);
+}
+
+@media (min-width: 900px) {
+  .footer .attribution {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .footer .attribution {
+    font-size: 14px;
+  }
 }
 
 .footer a {
@@ -71,12 +192,35 @@ html {
   color: #413a3a;
 }
 
+.hero-desktop {
+  background-image: url("./../images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .hero-desktop {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 610px;
+            flex: 0 0 610px;
+  }
+}
+
 [data-error='false']:not(input) {
   opacity: 0;
 }
 
 .form {
   margin-bottom: 20px;
+}
+
+@media (min-width: 1660px) {
+  .form {
+    margin-bottom: 40px;
+  }
 }
 
 .form__input-wrapper {
@@ -93,6 +237,19 @@ html {
   font-family: inherit;
   padding: 17px 105px 15px 25px;
   font-size: 14px;
+}
+
+@media (min-width: 900px) {
+  .form__input {
+    padding-block: 21px;
+    padding-right: 150px;
+  }
+}
+
+@media (min-width: 1660px) {
+  .form__input {
+    font-size: 16px;
+  }
 }
 
 .form__input::-webkit-input-placeholder {
@@ -119,7 +276,7 @@ html {
   display: block;
   position: absolute;
   top: 50%;
-  right: 75px;
+  right: 115px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -138,6 +295,12 @@ html {
   box-shadow: 0px 12px 20px 0px rgba(206, 151, 151, 0.6);
 }
 
+@media (min-width: 900px) {
+  .form__btn {
+    width: 100px;
+  }
+}
+
 .form__btn:hover, .form__btn:focus, .form__btn:active {
   background: #f8bfbf;
   cursor: pointer;
@@ -149,5 +312,11 @@ html {
   padding-left: 25px;
   font-size: 13px;
   color: #e26969;
+}
+
+@media (min-width: 1660px) {
+  .form__text-error {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

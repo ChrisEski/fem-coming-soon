@@ -12,7 +12,22 @@ html {
   color: $clr--red-900;
 }
 
-.container {
-  background-color: $linear--bg-end;
+.wrapper {
   min-height: 100vh;
+  width: 100%;
+
+  @media (min-width: $desktop-md) {
+    display: flex;
+  }
+}
+
+.container {
+  @media (min-width: $desktop-md) {
+    background: linear-gradient(135deg, $linear--bg-start, $linear--bg-end);
+    background-image: url('./../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    flex: 1 0 0%;
+  }
 }

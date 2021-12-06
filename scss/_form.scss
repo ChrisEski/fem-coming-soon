@@ -5,6 +5,10 @@
 .form {
   margin-bottom: 20px;
 
+  @media (min-width: $desktop-lg) {
+    margin-bottom: 40px;
+  }
+
   &__input-wrapper {
     position: relative;
     margin-bottom: 8px;
@@ -21,6 +25,15 @@
     padding: 17px 105px 15px 25px;
     font-size: 14px;
 
+    @media (min-width: $desktop-md) {
+      padding-block: 21px;
+      padding-right: 150px;
+    }
+
+    @media (min-width: $desktop-lg) {
+      font-size: 16px;
+    }
+
     &::placeholder {
       color: $clr--red-300;
     }
@@ -34,7 +47,7 @@
     display: block;
     position: absolute;
     top: 50%;
-    right: 75px;
+    right: 115px;
     transform: translateY(-50%);
   }
 
@@ -51,6 +64,10 @@
     -webkit-box-shadow: 0px 12px 20px 0px rgba(206, 151, 151, 0.6);
     box-shadow: 0px 12px 20px 0px rgba(206, 151, 151, 0.6);
 
+    @media (min-width: $desktop-md) {
+      width: 100px;
+    }
+
     &:hover,
     &:focus,
     &:active {
@@ -65,5 +82,9 @@
     padding-left: 25px;
     font-size: 13px;
     color: $clr--red-700;
+
+    @media (min-width: $desktop-lg) {
+      font-size: 16px;
+    }
   }
 }

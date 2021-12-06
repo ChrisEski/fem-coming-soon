@@ -1,23 +1,59 @@
 .logo {
   // border: 1px solid red;
   background-color: $clr--white;
+
+  @media (min-width: $desktop-md) {
+    background-color: transparent;
+    margin-bottom: 70px;
+    padding-left: 160px;
+  }
+
+  @media (min-width: $desktop-xlg) {
+    padding-left: 220px;
+  }
+
   &__img {
     // border: 1px solid lightgreen;
     display: block;
-    width: 165px;
+    width: 145px;
     padding: 30px;
+
+    @media (min-width: $desktop-md) {
+      width: 165px;
+      padding: 64px 0px;
+    }
+
+    @media (min-width: $desktop-lg) {
+      width: 210px;
+    }
   }
 }
 
 .hero-mobile {
   display: block;
   width: 100%;
+
+  @media (min-width: $desktop-md) {
+    display: none;
+  }
 }
 
 .main {
   // border: 1px solid red;
   padding: 65px 30px 0px;
-  // background: linear-gradient(135deg, $linear--bg-start, $linear--bg-end);
+
+  @media (min-width: $desktop-md) {
+    padding: 0px 240px 0px 160px;
+  }
+
+  @media (min-width: $desktop-lg) {
+    padding-right: 360px;
+  }
+
+  @media (min-width: $desktop-xlg) {
+    padding-left: 220px;
+    padding-right: 400px;
+  }
 
   &__title {
     text-align: center;
@@ -26,6 +62,20 @@
     letter-spacing: 10px;
     line-height: 1.1;
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-md) {
+      text-align: left;
+      font-size: 60px;
+      margin-bottom: 30px;
+      letter-spacing: 17px;
+    }
+
+    @media (min-width: $desktop-lg) {
+      font-size: 70px;
+      margin-bottom: 40px;
+      letter-spacing: 20px;
+      line-height: 1.2;
+    }
 
     span {
       font-weight: $fw--light;
@@ -39,6 +89,20 @@
     font-size: 14px;
     color: $clr--red-300;
     margin-bottom: 35px;
+
+    @media (min-width: $desktop-md) {
+      text-align: left;
+      line-height: 2;
+      font-size: 16px;
+      font-weight: $fw--bold;
+    }
+
+    @media (min-width: $desktop-lg) {
+      text-align: left;
+      line-height: 2;
+      font-size: 19px;
+      font-weight: $fw--bold;
+    }
   }
 }
 
@@ -47,11 +111,33 @@
     text-align: center;
     font-size: 11px;
     color: hsla(0, 6%, 24%, 0.5);
+
+    @media (min-width: $desktop-md) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $desktop-lg) {
+      font-size: 14px;
+    }
   }
 
   a {
     text-decoration: none;
     font-weight: $fw--bold;
     color: hsl(0, 6%, 24%);
+  }
+}
+
+.hero-desktop {
+  // width: 42.6%;
+  background-image: url('./../images/hero-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  display: none;
+
+  @media (min-width: $desktop-md) {
+    display: block;
+    flex: 0 0 610px;
   }
 }
