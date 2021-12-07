@@ -78,7 +78,7 @@
     }
   }
 
-  &__text-error {
+  &__text-error[data-error='true'] {
     padding-left: 25px;
     font-size: 13px;
     color: $clr--red-700;
