@@ -276,9 +276,15 @@ html {
   display: block;
   position: absolute;
   top: 50%;
-  right: 115px;
+  right: 75px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media (min-width: 900px) {
+  .form__icon-error {
+    right: 115px;
+  }
 }
 
 .form__btn {
@@ -312,6 +318,7 @@ html {
   padding-left: 25px;
   font-size: 13px;
   color: #e26969;
+  height: 16px;
 }
 
 @media (min-width: 1660px) {
